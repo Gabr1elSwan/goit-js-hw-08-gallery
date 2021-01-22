@@ -37,7 +37,7 @@ refs.modal.addEventListener("click", closeLightbox);
 
 function onGalleryClick(e) {
   e.preventDefault();
-  if (e.target.nodeName !== 'IMG') {
+  if (e.target.nodeName !== "IMG") {
     return;
   }
   if (e.target.nodeName === "IMG") {
@@ -49,10 +49,10 @@ function onGalleryClick(e) {
 }
 
 function onClickHandlerClose(e) {
-  e.preventDefault(); 
+  e.preventDefault();
   refs.lightbox.classList.remove("is-open");
-  refs.lightbox__image.src = '';
-  refs.lightbox__image.alt = '';
+  refs.lightbox__image.src = "";
+  refs.lightbox__image.alt = "";
   window.removeEventListener("keyup", clickKey);
 }
 
